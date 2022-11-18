@@ -20,7 +20,7 @@ for host1 in $(seq 1 254); do
       for host4 in $(seq 1 254); do
         target="$host1.$host2.$host3.$host4"
         echo -ne " ( 0) ${red}looking${end} at --> ${green}$target${end}\r"
-          timeout 1 bash -c "echo '' > /dev/tcp/$target/$3" 2> /dev/null && echo -e "${yellow}->${end} $target has $4 port ${green}open${end}                        " &
+          timeout 1 bash -c "echo '' > /dev/tcp/$target/$3" 2> /dev/null && echo -e "${yellow}->${end} $target has $3 port ${green}open${end}                        " &
         done
       done
     done
