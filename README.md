@@ -8,11 +8,11 @@
 <p>neteye -i 192.168.1.0 -p 80</p>
 <h4>Example with netmask: </h4>
 <p>neteye -i 172.16.0.0 -p 80 -m 16</p>
-<h2>Internet mode</h2>
+<h3>Global mode</h3>
 <p>This scan will be extremly slow due to the 4.294.967.296 targets that will be.</p>
 <p>This type of scan its about all the public ipv4 address</p>
 <h4>Example: </h4>
-<p>neteye --internet -p 22</p>
+<p>neteye -G -p 22</p>
 
 <h2>Installation</h2>
 <p>Just execute the script install.sh as root</p>
